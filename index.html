@@ -7,7 +7,12 @@
     <title>My Page</title>
 </head>
 <body>
-    <h1>Hello World</h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium modi repellendus, nobis expedita ipsa harum reprehenderit alias unde. Pariatur quae placeat expedita recusandae esse perferendis distinctio accusantium possimus ut voluptatibus.</p>
+    <script>
+       
+        fetch('https://dummyjson.com/products')
+        .then(res => res.json())
+        .then(json => console.log(json.products))
+            
+    </script>
 </body>
 </html>
